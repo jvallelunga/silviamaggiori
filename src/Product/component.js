@@ -18,11 +18,10 @@ function Product() {
   const output = [];
 
   if (name) {
+    const text = `Quiero informacion acerca del producto: ${name}`;
     const href = encodeURIComponent(`https://api.whatsapp.com/send?text=${text}&phone=+5492494336422`);
 
-    output.push(<a class="btn btn-primary" href={href}>
-      Consultar precio
-    </a>);
+    output.push(<a class="btn btn-primary" href={href}>Consultar precio</a>);
   }
 
   return output;
